@@ -1,0 +1,5 @@
+network:
+  enable_ipv6: true
+
+openthread:
+  # The user MUST fill this, or ESPHome will throw an error

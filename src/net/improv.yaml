@@ -1,0 +1,6 @@
+esp32_improv:
+  authorizer: binary_sensor_usrbtn
+  status_indicator: output_led_builtin
+  wifi_timeout: 5min
+
+improv_serial:

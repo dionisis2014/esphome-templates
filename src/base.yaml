@@ -1,0 +1,37 @@
+substitutions:
+  node_name: esphome-node
+  node_friendly_name: "ESPHome Node"
+  variant: esp32
+  gpio_led: GPIO2
+  gpio_usrbtn: GPIO0
+
+esphome:
+  name: ${node_name}
+  friendly_name: ${node_friendly_name}
+
+esp32:
+  variant: ${variant}
+  framework:
+    type: esp-idf
+
+logger:
+  level: DEBUG
+
+api:
+  reboot_timeout: 15min
+
+ota:
+  - platform: esphome
+    id: ota_esphome
+
+safe_mode:
+
+binary_sensor:
+  - platform: gpio
+    id: binary_sensor_usrbtn
+    pin: ${gpio_usrbtn}
+
+output:
+  - platform: ledc
+    id: output_led_builtin
+    pin: ${gpio_led}
