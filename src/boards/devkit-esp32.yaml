@@ -7,6 +7,3 @@ packages:
       variant: esp32
       gpio_led: GPIO2
       gpio_usrbtn: GPIO0
-
-esphome:
-  name_add_mac_suffix: true

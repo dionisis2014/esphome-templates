@@ -8,9 +8,6 @@ packages:
       gpio_led: GPIO48
       gpio_usrbtn: GPIO0
 
-esphome:
-  name_add_mac_suffix: true
-
 output:
   - id: output_led_builtin
     platform: esp32_rmt_led_strip

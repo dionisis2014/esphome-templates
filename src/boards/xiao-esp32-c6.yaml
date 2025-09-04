@@ -9,7 +9,6 @@ packages:
       gpio_usrbtn: GPIO9
 
 esphome:
-  name_add_mac_suffix: true
   on_boot:
     - priority: 800
       then:
