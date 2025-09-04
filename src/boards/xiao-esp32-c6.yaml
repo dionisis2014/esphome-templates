@@ -1,12 +1,12 @@
+substitutions:
+  node_name: xiao-esp32-c6
+  node_friendly_name: "Xiao ESP32-C6"
+  variant: esp32c6
+  gpio_led: GPIO15
+  gpio_usrbtn: GPIO9
+
 packages:
-  - !include
-    file: ../base.yaml
-    vars:
-      node_name: xiao-esp32-c6
-      node_friendly_name: "Xiao ESP32-C6"
-      variant: esp32c6
-      gpio_led: GPIO15
-      gpio_usrbtn: GPIO9
+  - !include ../base.yaml
 
 esphome:
   on_boot:

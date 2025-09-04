@@ -1,9 +1,9 @@
+substitutions:
+  node_name: devkit-esp32
+  node_friendly_name: "DevKit ESP32"
+  variant: esp32
+  gpio_led: GPIO2
+  gpio_usrbtn: GPIO0
+
 packages:
-  - !include
-    file: ../base.yaml
-    vars:
-      node_name: devkit-esp32
-      node_friendly_name: "DevKit ESP32"
-      variant: esp32
-      gpio_led: GPIO2
-      gpio_usrbtn: GPIO0
+  - !include ../base.yaml

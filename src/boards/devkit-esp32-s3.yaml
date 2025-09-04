@@ -1,12 +1,12 @@
+substitutions:
+  node_name: devkit-esp32-s3
+  node_friendly_name: "DevKit ESP32-S3"
+  variant: esp32s3
+  gpio_led: GPIO48
+  gpio_usrbtn: GPIO0
+
 packages:
-  - !include
-    file: ../base.yaml
-    vars:
-      node_name: devkit-esp32-s3
-      node_friendly_name: "DevKit ESP32-S3"
-      variant: esp32s3
-      gpio_led: GPIO48
-      gpio_usrbtn: GPIO0
+  - !include ../base.yaml
 
 output:
   - id: output_led_builtin
