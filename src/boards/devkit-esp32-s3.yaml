@@ -8,9 +8,13 @@ substitutions:
 packages:
   - !include ../base.yaml
 
+output:
+  - id: !remove output_led_builtin
+
 light:
-  - id: output_led_builtin
-    platform: esp32_rmt_led_strip
-    num_leds: 1
+  - platform: esp32_rmt_led_strip
+    id: light_led_builtin
+    pin: ${gpio_led}
     chipset: ws2812
     rgb_order: GRB
+    num_leds: 1
