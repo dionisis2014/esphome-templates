@@ -7,10 +7,3 @@ esp32:
 psram:
   mode: octal
   speed: 80MHz
-
-output:
-  - id: output_led_builtin
-    platform: esp32_rmt_led_strip
-    num_leds: 1
-    chipset: ws2812
-    rgb_order: GRB
