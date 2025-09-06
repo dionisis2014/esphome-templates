@@ -2,7 +2,7 @@ packages:
   - !include devkit-esp32-s3.yaml
 
 esp32:
-  flash_size: 16M
+  flash_size: 16MB
 
 psram:
   mode: octal
