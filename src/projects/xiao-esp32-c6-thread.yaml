@@ -1,0 +1,8 @@
+packages:
+  - !include ../boards/xiao-esp32-c6.yaml
+  - !include ../net/thread.yaml
+  - !include ../net/proxy.yaml
+
+dashboard_import:
+  package_import_url: github://dionisis2014/esphome-templates/src/projects/xiao-esp32-c6-thread.yaml
+  import_full_config: false
