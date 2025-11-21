@@ -1,10 +1,6 @@
 packages:
   - !include devkit-esp32-s3.yaml
 
-dashboard_import:
-  package_import_url: github://dionisis2014/esphome-templates/src/boards/devkit-esp32-s3-n16r8.yaml
-  import_full_config: false
-
 esp32:
   flash_size: 16MB
 
