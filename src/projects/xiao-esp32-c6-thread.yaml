@@ -4,5 +4,5 @@ packages:
   - !include ../net/proxy.yaml
 
 dashboard_import:
-  package_import_url: github://dionisis2014/esphome-templates/src/projects/xiao-esp32-c6-thread.yaml
+  package_import_url: github://dionisis2014/esphome-templates/src/projects/xiao-esp32-c6-thread.yaml@master
   import_full_config: false
