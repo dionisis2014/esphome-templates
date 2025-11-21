@@ -8,6 +8,7 @@ substitutions:
 esphome:
   name: ${node_name}
   friendly_name: ${node_friendly_name}
+  name_add_mac_suffix: true
 
 esp32:
   variant: ${variant}
