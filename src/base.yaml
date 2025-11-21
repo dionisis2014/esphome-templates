@@ -9,6 +9,9 @@ esphome:
   name: ${node_name}
   friendly_name: ${node_friendly_name}
   name_add_mac_suffix: true
+  project:
+    name: "dionisis2014.esphome_templates"
+    version: "0.1.0"
 
 esp32:
   variant: ${variant}
